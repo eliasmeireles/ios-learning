@@ -32,7 +32,8 @@ class ViewController: UIViewController {
         firstDice.image = firstRandomDice.diceImage()
         let secondRandomDice: Dice = getRandomDice()
         secondDice.image = secondRandomDice.diceImage()
-        diceTotal.text = "Total: " + String(firstRandomDice.diceCount() + secondRandomDice.diceCount())
+        let totalString: String = String(firstRandomDice.diceCount() + secondRandomDice.diceCount())
+        diceTotal.text = "Total: " + totalString
     }
     
     func loadDices() {
