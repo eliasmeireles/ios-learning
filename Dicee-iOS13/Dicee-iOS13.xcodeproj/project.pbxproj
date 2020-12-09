@@ -33,13 +33,13 @@
 		ADB0E00822AFA60E0030352D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ADB0E00A22AFA60E0030352D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ADE1FB1322B39F0200DD2BD6 /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		DE55534525806A9D007F82E8 /* Dice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Dice.swift; path = model/Dice.swift; sourceTree = "<group>"; };
-		DE55534825806BA3007F82E8 /* DiceOne.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DiceOne.swift; path = model/DiceOne.swift; sourceTree = "<group>"; };
-		DE55534B25806C18007F82E8 /* DiceTwo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DiceTwo.swift; path = model/DiceTwo.swift; sourceTree = "<group>"; };
-		DE55534E25806C60007F82E8 /* DiceThree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DiceThree.swift; path = model/DiceThree.swift; sourceTree = "<group>"; };
-		DE55535125806CDF007F82E8 /* DiceFor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DiceFor.swift; path = model/DiceFor.swift; sourceTree = "<group>"; };
-		DE55535425806D09007F82E8 /* DiceFive.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DiceFive.swift; path = model/DiceFive.swift; sourceTree = "<group>"; };
-		DE55535725806D40007F82E8 /* DiceSixe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DiceSixe.swift; path = model/DiceSixe.swift; sourceTree = "<group>"; };
+		DE55534525806A9D007F82E8 /* Dice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dice.swift; sourceTree = "<group>"; };
+		DE55534825806BA3007F82E8 /* DiceOne.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiceOne.swift; sourceTree = "<group>"; };
+		DE55534B25806C18007F82E8 /* DiceTwo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiceTwo.swift; sourceTree = "<group>"; };
+		DE55534E25806C60007F82E8 /* DiceThree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiceThree.swift; sourceTree = "<group>"; };
+		DE55535125806CDF007F82E8 /* DiceFor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiceFor.swift; sourceTree = "<group>"; };
+		DE55535425806D09007F82E8 /* DiceFive.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiceFive.swift; sourceTree = "<group>"; };
+		DE55535725806D40007F82E8 /* DiceSixe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiceSixe.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +73,7 @@
 		ADB0DFFB22AFA6090030352D /* Dicee-iOS13 */ = {
 			isa = PBXGroup;
 			children = (
+				DECF9D3825816E4800ACD26B /* models */,
 				ADB0DFFC22AFA6090030352D /* AppDelegate.swift */,
 				ADE1FB1322B39F0200DD2BD6 /* SceneDelegate.swift */,
 				ADB0E00022AFA6090030352D /* ViewController.swift */,
@@ -80,6 +81,13 @@
 				ADB0E00522AFA60E0030352D /* Assets.xcassets */,
 				ADB0E00722AFA60E0030352D /* LaunchScreen.storyboard */,
 				ADB0E00A22AFA60E0030352D /* Info.plist */,
+			);
+			path = "Dicee-iOS13";
+			sourceTree = "<group>";
+		};
+		DECF9D3825816E4800ACD26B /* models */ = {
+			isa = PBXGroup;
+			children = (
 				DE55534525806A9D007F82E8 /* Dice.swift */,
 				DE55534825806BA3007F82E8 /* DiceOne.swift */,
 				DE55534B25806C18007F82E8 /* DiceTwo.swift */,
@@ -88,7 +96,7 @@
 				DE55535425806D09007F82E8 /* DiceFive.swift */,
 				DE55535725806D40007F82E8 /* DiceSixe.swift */,
 			);
-			path = "Dicee-iOS13";
+			path = models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
