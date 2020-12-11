@@ -24,16 +24,34 @@ class ViewController: UIViewController {
     }
     
     @IBAction func rerollDice(_ sender: UIButton) {
-        roll()
+        DispatchQueue.global(qos: .utility).async {
+            DispatchQueue.main.async {
+                self.rollButton.isEnabled = false
+            }
+            for _ in 0...15 {
+                DispatchQueue.main.async {
+                    print(self.getRandomDices())
+                }
+                Thread.sleep(forTimeInterval: 0.0256)
+            }
+            DispatchQueue.main.async {
+                self.roll()
+                self.rollButton.isEnabled = true
+            }
+        }
     }
     
-    fileprivate func roll() {
+    
+    private func getRandomDices() -> Int {
         let firstRandomDice: Dice = getRandomDice()
         firstDice.image = firstRandomDice.diceImage()
         let secondRandomDice: Dice = getRandomDice()
         secondDice.image = secondRandomDice.diceImage()
-        let totalString: String = String(firstRandomDice.diceCount() + secondRandomDice.diceCount())
-        diceTotal.text = "Total: " + totalString
+        return firstRandomDice.diceCount() + secondRandomDice.diceCount()
+    }
+    
+    private func roll() {
+        diceTotal.text = "Total: " + String(getRandomDices())
     }
     
     func loadDices() {
