@@ -12,7 +12,7 @@ target/
 .settings
 .springBeans
 .sts4-cache
-
+GoogleService-Info.plist
 ### IntelliJ IDEA ###
 .idea
 .jar
